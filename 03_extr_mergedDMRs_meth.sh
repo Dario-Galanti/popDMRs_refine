@@ -34,7 +34,7 @@ if [ ${cont} == "CpG" ];then ED=20;else ED =15;fi
 fout2=${wDir}/allspls_5MEF_${ED}ED_$(basename $regions)
 
 ## PRE-STEP: Make an index file from the unionbed file, containing a single column with all scaffolds
-#tail -n+2 METHunion_filtered_CpG.bed | cut -f1 | uniq > $index
+tail -n+2 METHunion_filtered_CpG.bed | cut -f1 | uniq > $index
 
 ## NB: All DMRs should be covered in the unionbed file, but we should still make sure of that
 ## 1) Intersect region_bed and unionbedg to discard uncovered DMRs (less than "x" Cs) and report coverage of covered ones for further filtering
