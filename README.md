@@ -17,6 +17,6 @@ An enrichment of short and close DMRs as in the figure below suggests excessive 
 Merging of DMRs from different pairwise comparisons in the DMR pipeline directory structure to optain DMRs for the whole dataset.
 
 [03_extr_mergedDMRs_meth.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/03_extr_mergedDMRs_meth.sh) <br/>
-Extract methylation from the newly merged DMRs from a unionbed file and filter merged DMRs. The filtering uses a minimum methylation difference and a minimum proportion of samples which need to show the aforementioned difference, similarly to Minor Allele Frequency filtering often used in population genetics.
+Extract methylation from the newly merged DMRs from a unionbed file and filter merged-DMRs. The filtering uses a minimum methylation difference and a minimum proportion of samples which need to show the aforementioned difference, similarly to Minor Allele Frequency filtering often used in population genetics.
 This script needs [average_over_bed.py](https://github.com/Dario-Galanti/EpiWGBS_downstream/blob/main/average_over_bed.py).
 
