@@ -3,8 +3,8 @@
 ## Author: Dario Galanti 2020 (modified from Cristian Peña https://github.com/EpiDiverse/scripts/blob/master/merge_DMRs.sh)
 ## Aim: This script merges all bed files (included in an input directory) in one unique bed file. In this way each context can be summarized.
 ## Input directory: run script in DMR pipe output directory (outdir/${context}/${comparison}/ )
-## Run: bash 02_merge_DMRs.sh context outputDirectory
-## Run: bash 02_merge_DMRs.sh CpG merged_DMRs
+## Run: bash 2_merge_DMRs.sh context outputDirectory
+## Run: bash 2_merge_DMRs.sh CpG merged_DMRs
 ## Dependencies: bedtools (https://bedtools.readthedocs.io/en/latest/content/bedtools-suite.html)
 
 
