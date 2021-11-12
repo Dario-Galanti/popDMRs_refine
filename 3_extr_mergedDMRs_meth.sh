@@ -29,7 +29,7 @@ fout1=${wDir}/allspls_$(basename $regions)
 # IMPORTANT: Define MEF and ED to further filter DMRs
 MEF=0.05	# Define Minor Epiallele Frequency (proportion of samples which need to have differential methylation from the others)
 # Define Epiallele Difference (minimum methylation difference to define different epialleles) NB: Use 20 for CpG and 15 for CHG and CHH
-if [ ${cont} == "CpG" ];then ED=20;else ED =15;fi
+if [ ${cont} == "CpG" ];then ED=20;else ED=15;fi
 
 fout2=${wDir}/allspls_5MEF_${ED}ED_$(basename $regions)
 
