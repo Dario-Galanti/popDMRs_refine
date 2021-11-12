@@ -3,8 +3,8 @@
 ## Input: DMR pipe output file
 ## Aim: Merge DMRs closer then "x" bp that have the same directionality (both hyper in the same group)
 ## Output: bed file with same format as input but some DMRs merged
-## Run: python3 01_join_fragmented_DMRs.py input.bed output.bed
-## Run: for f in pop_DMRs/CpG/R*.bed;do fout=$(echo $f | rev | cut -c5- | rev)_joined_146bp.bed; python3 01_join_fragmented_DMRs.py $f $fout;done
+## Run: python3 1_join_fragmented_DMRs.py input.bed output.bed
+## Run: for f in pop_DMRs/CpG/R*.bed;do fout=$(echo $f | rev | cut -c5- | rev)_joined_146bp.bed; python3 1_join_fragmented_DMRs.py $f $fout;done
 
 ## Purpose: Especially in CHH (higher density) DMRs are sometimes detected in smaller chuncks instead of detecting full DMRs
 ## IMPORTANT: Bare in mind that the DMR stats from this script are not very accurate because they don't make use of the original unionbed files!!!
