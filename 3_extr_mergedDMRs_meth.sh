@@ -39,9 +39,7 @@ fout2=${wDir}/allspls_5MEF_${ED}ED_$(basename $regions)
 ## NB: All DMRs should be covered in the unionbed file, but we should still make sure of that
 ## 1) Intersect region_bed and unionbedg to discard uncovered DMRs (less than "x" Cs) and report coverage of covered ones for further filtering
 #echo Intersecting inputs and discarding uncovered regions
-awk 'NR!=1{OFS="\t"; print $1,$2,$3}' $unionbed | bedtools intersect -a $regions -b stdin -c > ${wDir}/tmp_covered_$(basename $regions)
-sort -k1,1V -k2,2n ${wDir}/tmp_covered_$(basename $regions) | awk -v x=$x '{if($NF >= x){OFS="\t"; print $1,$2,$3,$NF}}' > $covered_regions
-rm ${wDir}/tmp_covered_$(basename $regions)
+awk 'NR!=1{OFS="\t";print $1,$2,$3}' $unionbed | bedtools intersect -a $regions -b stdin -c | awk -v x=$x '{if($NF>=x){OFS="\t";print $1,$2,$3,$NF}}' | sort -k1,1V -k2,2n > $covered_regions
 
 ## 2) Extract regions methylation with average_over_bed.py
 tail -n+2 $unionbed | cut -f1 | uniq > $index
