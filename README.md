@@ -17,6 +17,6 @@ An over-representation of short and close DMRs as in the figures below suggests 
 Merging DMRs from all pairwise comparisons in the [DMR pipeline](https://github.com/EpiDiverse/dmr) output directory to optain DMRs for the whole dataset (merged-DMRs).
 
 [3_extr_mergedDMRs_meth.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/3_extr_mergedDMRs_meth.sh) <br/>
-Extract methylation from the newly merged DMRs from a unionbed file and filter merged-DMRs. The filtering uses a minimum methylation difference and a minimum proportion of samples which need to show the aforementioned difference, similarly to Minor Allele Frequency filtering often used in population genetics.
+Extract methylation of merged-DMRs from a unionbed file and filter merged-DMRs. The filtering is based on two user-defined parameters: 1) a minimum Methylation Difference (MD) and 2) a minimum proportion of samples which need to show the aforementioned difference, which we call Minor Epiallele Frequency (MEF), similarly to Minor Allele Frequency filtering often used in population genetics.
 This script needs [average_over_bed.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/average_over_bed.py).
 
