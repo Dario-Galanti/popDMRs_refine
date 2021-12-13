@@ -14,7 +14,7 @@ An over-representation of short and close DMRs as in the figures below suggests 
 
 
 [2_merge_DMRs.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/2_merge_DMRs.sh) <br/>
-Merging of DMRs from different pairwise comparisons in the [DMR pipeline](https://github.com/EpiDiverse/dmr) directory structure to optain DMRs for the whole dataset.
+Merging DMRs from all pairwise comparisons in the [DMR pipeline](https://github.com/EpiDiverse/dmr) output directory to optain DMRs for the whole dataset (merged-DMRs).
 
 [3_extr_mergedDMRs_meth.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/3_extr_mergedDMRs_meth.sh) <br/>
 Extract methylation from the newly merged DMRs from a unionbed file and filter merged-DMRs. The filtering uses a minimum methylation difference and a minimum proportion of samples which need to show the aforementioned difference, similarly to Minor Allele Frequency filtering often used in population genetics.
