@@ -11,6 +11,8 @@ DMR length distribution (left figure below) should be checked to see if very sma
 An over-representation of short and close DMRs as in the figures below suggests excessive "fragmentation".
 
 ![image](https://user-images.githubusercontent.com/58292612/121940472-6e80a580-cd4e-11eb-964f-25de4ee85b5e.png)
+![image](https://user-images.githubusercontent.com/58292612/145868384-42509bda-5227-4e93-8f83-56f7cdf6fabf.png)
+
 
 
 [2_merge_DMRs.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/2_merge_DMRs.sh) <br/>
