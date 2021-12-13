@@ -7,8 +7,8 @@ WORKFLOW DESCRIPTION: <br/>
 
 [1_join_fragmented_DMRs.py](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/1_join_fragmented_DMRs.py) <br/>
 [DMR pipeline](https://github.com/EpiDiverse/dmr) fragmentation acts differently depending on context (CpG, CHG or CHH), sometimes leading to CHH-DMRs being particularly "fragmented". This python script joins all comparison-specific DMRs that are closer than a user-defined distance (default 146bp as fragmentation default in the DMR pipeline) and have the same directionality (higher methylation in the same comparison group). 
-DMR length distribution can be compared between the 3 contexts with reg_length_distr_bycont.py and distance between subsequent DMRs with DMR_distance_distr.py.
-An enrichment of short and close DMRs as in the figure below suggests excessive "fragmentation".
+DMR length distribution (left figure below) should be checked to see if very small DMRs are more abundant and if there are differences between contexts. But especially the distribution of distance between subsequent DMRs (right figure below) should be observed to see if very close DMRs are over-represented. This can be done with [DMR_distance_distr.py](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/DMR_distance_distr.py).
+An over-representation of short and close DMRs as in the figures below suggests excessive "fragmentation".
 
 ![image](https://user-images.githubusercontent.com/58292612/121940472-6e80a580-cd4e-11eb-964f-25de4ee85b5e.png)
 
