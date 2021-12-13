@@ -8,9 +8,10 @@
 
 ## Purpose: Especially in CHH (higher density) DMRs are sometimes detected in smaller chuncks instead of detecting full DMRs
 ## IMPORTANT: Bare in mind that the DMR stats from this script are not very accurate because they don't make use of the original unionbed files!!!
-## Cs is only obtaines summing up Cs from merged DMRs but does not count any Cs in the region between the merged DMRs
+## Cs is only obtained summing up Cs from merged DMRs but does not count any Cs in the region between the merged DMRs
 ## The average difference suffers from the same imprecision.
 ## The merged_DMR q-value is taken from the original DMR with the minimum q-value
+## For these reasons, these stats are not used for further analysis.
 
 ## Import modules
 import sys
