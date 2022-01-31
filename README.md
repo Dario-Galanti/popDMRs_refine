@@ -19,5 +19,5 @@ Merging DMRs from all pairwise comparisons in the [DMR pipeline](https://github.
 
 [3_extr_mergedDMRs_meth.sh](https://github.com/Dario-Galanti/popDMRs_refine/blob/main/3_extr_mergedDMRs_meth.sh) <br/>
 Extract methylation of merged-DMRs from a unionbed file and filter merged-DMRs. The filtering is based on two user-defined parameters: 1) a minimum Methylation Difference (MD) and 2) a minimum proportion of samples which need to show the aforementioned difference, which we call Minor Epiallele Frequency (MEF), similarly to Minor Allele Frequency filtering often used in population genetics.
-This script needs [average_over_bed.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/average_over_bed.py).
+This script needs [average_over_bed.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/region_meth/average_over_bed.py).
 
