@@ -4,7 +4,7 @@
 ### Author: Dario Galanti Mar 2021
 ### Input 1): position-sorted unionbedg file (properly sorted, so "sort -k1,1V -k2,2n")
 ### Input 2): merged_DMRs file or any bed file with sorted, non-overlapping regions (columns after the third will be ignored)
-### Run: bash 03_extr_mergedDMRs_meth.sh unionbedg.bed region_file
+### Run: bash 03_extr_mergedDMRs_meth.sh unionbedg.bed region_file.bed
 ### Run: sbatch --partition test --cpus-per-task 2 --mem 20G --time 08:00:00 --wrap "bash 3_extr_mergedDMRs_meth.sh METHunion_filtered_CpG.bed merged_DMRs/CpG/joined_146bpDMRs_CpG_merged.bed"
 
 ## Dependencies: This script is using Adam Nunn's average_over_bed.py script (https://github.com/EpiDiverse/ewas/blob/master/bin/average_over_bed.py)
