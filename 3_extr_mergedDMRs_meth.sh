@@ -33,15 +33,13 @@ if [ ${cont} == "CpG" ];then ED=20;else ED=15;fi
 
 fout2=${wDir}/allspls_5MEF_${ED}ED_$(basename $regions)
 
-## PRE-STEP: Make an index file from the unionbed file, containing a single column with all scaffolds
-#tail -n+2 METHunion_filtered_CpG.bed | cut -f1 | uniq > $index
-
 ## NB: All DMRs should be covered in the unionbed file, but we should still make sure of that
 ## 1) Intersect region_bed and unionbedg to discard uncovered DMRs (less than "x" Cs) and report coverage of covered ones for further filtering
 #echo Intersecting inputs and discarding uncovered regions
 awk 'NR!=1{OFS="\t";print $1,$2,$3}' $unionbed | bedtools intersect -a $regions -b stdin -c | awk -v x=$x '{if($NF>=x){OFS="\t";print $1,$2,$3,$NF}}' | sort -k1,1V -k2,2n > $covered_regions
 
 ## 2) Extract regions methylation with average_over_bed.py
+## PRE-STEP: Make an index file from the unionbed file, containing a single column with all scaffolds
 tail -n+2 $unionbed | cut -f1 | uniq > $index
 python3 $average_over_bed $covered_regions $unionbed $index $fout1
 rm $index
