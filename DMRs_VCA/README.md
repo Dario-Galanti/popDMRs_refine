@@ -8,13 +8,13 @@ ii) The trans-IBS matrix can be obtained with [PLINK](https://zzz.bwh.harvard.ed
 iii) The environmental matrix can be obtained as euclidean distance between locations of origin using environmental variables and should be normalized between 0 and 1 and inverted to a similarity matrix.
 
 SCRIPTS DESCRIPTION: <br/>
-[1a_DMRs_VCA.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/new/main/DMRs_VCA/1a_DMRs_VCA.sh)<br/>
+[1a_DMRs_VCA.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/DMRs_VCA/1a_DMRs_VCA.sh)<br/>
 Iterate through all DMRs, calculate cis-IBS matrix and run 1b_DMRs_VCA_heritabiliy.R for variance decomposition.
 
 
-[1b_DMRs_VCA_heritability.R](https://github.com/Dario-Galanti/popDMRs_refine_VCA/new/main/DMRs_VCA/1b_DMRs_VCA_heritability.R)<br/>
+[1b_DMRs_VCA_heritability.R](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/DMRs_VCA/1b_DMRs_VCA_heritability.R)<br/>
 Run variance decomposition of an individual DMR.
 
 
-[2_DMRs_h2xLocxCont_withunexplained.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/new/main/DMRs_VCA/2_DMRs_h2xLocxCont_withunexplained.sh)<br/>
+[2_DMRs_h2xLocxCont_withunexplained.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/DMRs_VCA/2_DMRs_h2xLocxCont_withunexplained.sh)<br/>
 Summarize the results: 1) calculate context-specific and genomic feature specific variance explained. 2) DMR binning based on the major predictor.
