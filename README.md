@@ -1,7 +1,7 @@
 # popDMRs_refine
-Workflow for downstream analysis of EpiDiverse [DMR pipeline](https://github.com/EpiDiverse/dmr) results to merge and refine comparison-specific DMRs from different pairwise-comparisons.
+Workflow for downstream analysis of EpiDiverse [DMR pipeline](https://github.com/EpiDiverse/dmr) results to merge and refine comparison-specific DMRs to obtain populations-level DMRs. Additionally there are scripts to perform Variance Component Analysis (VCA) of the obtained population-DMRs, to quantify varince explained by cis-genetic variants, trans-genetic variants and the environment of origin.
 
-The EpiDiverse [DMR pipeline](https://github.com/EpiDiverse/dmr) is a great tool for calling context-specific (CpG, CHG or CHH) Differentially Methylated Regions between groups of samples. This is a downstream workflow that refines DMRs for large datasets where the pipeline needs to perform a large amount of pairwise comparisons between groups. It includes 1) joining of supposedly "fragmented" DMRs (pairwise-specific short and close DMRs), 2) merging of DMRs from different pairwise comparisons, 3) methylation extraction of the newly obtained merged-DMRs using a unionbed file and final DMR filtering.
+The EpiDiverse [DMR pipeline](https://github.com/EpiDiverse/dmr) is a great tool for calling context-specific (CpG, CHG or CHH) Differentially Methylated Regions between groups of samples. This is a downstream workflow that refines DMRs for large population-level datasets where the pipeline needs to perform a large amount of pairwise comparisons between groups. It includes 1) joining of supposedly "fragmented" DMRs (pairwise-specific short and close DMRs), 2) merging of DMRs from different pairwise comparisons, 3) methylation extraction of the newly obtained merged-DMRs using a unionbed file and final DMR filtering. The VCA workflow is described in the dedicated folder.
 
 WORKFLOW DESCRIPTION: <br/>
 
