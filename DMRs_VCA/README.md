@@ -9,7 +9,7 @@ iii) The environmental matrix can be obtained as euclidean distance between loca
 
 SCRIPTS DESCRIPTION: <br/>
 [1a_DMRs_VCA.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/DMRs_VCA/1a_DMRs_VCA.sh)<br/>
-Iterate through all DMRs, calculate cis-IBS matrix and run 1b_DMRs_VCA_heritabiliy.R for variance decomposition.
+Iterate through all DMRs, calculate cis-IBS matrix and run 1b_DMRs_VCA_heritabiliy.R for variance decomposition. Additionally bin DMRs based on their major predictor.
 
 
 [1b_DMRs_VCA_heritability.R](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/DMRs_VCA/1b_DMRs_VCA_heritability.R)<br/>
