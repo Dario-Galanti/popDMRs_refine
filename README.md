@@ -18,6 +18,14 @@ An over-representation of short and close DMRs as in the figures below suggests 
 Merging DMRs from all pairwise comparisons in the [DMR pipeline](https://github.com/EpiDiverse/dmr) output directory to optain DMRs for the whole dataset (merged-DMRs).
 
 [3_extr_mergedDMRs_meth.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/3_extr_mergedDMRs_meth.sh) <br/>
-Extract methylation of merged-DMRs from a unionbed file and filter merged-DMRs. The filtering is based on two user-defined parameters: 1) a minimum Methylation Difference (MD) and 2) a minimum proportion of samples which need to show the aforementioned difference, which we call Minor Epiallele Frequency (MEF), similarly to Minor Allele Frequency filtering often used in population genetics.
-This script needs [average_over_bed.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/region_meth/average_over_bed.py).
+Extract methylation of merged-DMRs from a unionbed file ([WGBS_simpleworkflow](https://github.com/Dario-Galanti/WGBS_downstream/tree/main/WGBS_simpleworkflow)) and filter merged-DMRs. The filtering is based on two user-defined parameters: 1) a minimum Methylation Difference (MD) and 2) a minimum proportion of samples which need to show the aforementioned difference, which we call Minor Epiallele Frequency (MEF), similarly to Minor Allele Frequency filtering often used in population genetics.
+This script needs [average_over_bed.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/WGBS_simpleworkflow/region_meth/average_over_bed.py).
+
+
+[3_extr_mergedDMRs_Met.sh](https://github.com/Dario-Galanti/popDMRs_refine_VCA/blob/main/3_extr_mergedDMRs_Met.sh) <br/>
+Extract either mean or weighted methylation ([Schultz et al 2012](https://www.cell.com/trends/genetics/fulltext/S0168-9525(12)00171-0)) of merged-DMRs from a unioncount file ([WGBS_completeworkflow](https://github.com/Dario-Galanti/WGBS_downstream/tree/main/WGBS_completeworkflow)) and filter merged-DMRs. The filtering is based on two user-defined parameters: 1) a minimum Methylation Difference (MD) and 2) a minimum proportion of samples which need to show the aforementioned difference, which we call Minor Epiallele Frequency (MEF), similarly to Minor Allele Frequency filtering often used in population genetics.<br/>
+This script needs a python script to prform the calculations:<br/>
+For mean methylation use [unioncount_reg_avgmet.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/WGBS_completeworkflow/region_meth/unioncount_reg_avgmet.py).<br/>
+For weighted methylation use [unioncount_reg_weighmet.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/WGBS_completeworkflow/region_meth/unioncount_reg_weighmet.py).
+
 
