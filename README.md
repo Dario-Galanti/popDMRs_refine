@@ -28,4 +28,7 @@ This script needs a python script, defined in the beginning, to perform the calc
 For mean methylation use [unioncount_reg_avgmet.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/WGBS_completeworkflow/region_meth/unioncount_reg_avgmet.py).<br/>
 For weighted methylation use [unioncount_reg_weighmet.py](https://github.com/Dario-Galanti/WGBS_downstream/blob/main/WGBS_completeworkflow/region_meth/unioncount_reg_weighmet.py).
 
+<br/>
 
+PUBLICATIONS: <br/>
+[Genetic and environmental drivers of large-scale epigenetic variation in Thlaspi arvense](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010452)
